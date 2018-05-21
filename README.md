@@ -40,3 +40,10 @@ chunk {vendor} vendor.js, vendor.js.map (vendor) 3.37 MB [initial] [rendered]
 open browser on localhost:   http://127.0.0.1:4200/
 
 ![image](demo.png)
+
+
+## Welcome to subcribe MY WeChat official account
+
+欢迎大家订阅我的公众号，会不定期分享一些容器，网络，和编程相关技术文章。
+
+![QR](https://github.com/xiaopeng163/statistic/blob/master/QR/MY_WeChat_official_account.jpg)
