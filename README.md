@@ -1,5 +1,7 @@
 # angular-docker
 
+[![Docker Repository on Quay](https://quay.io/repository/oh-my-docker/angular/status "Docker Repository on Quay")](https://quay.io/repository/oh-my-docker/angular)
+
 Play angular just through docker and without installing any angular and node software on your computer
 
 ## create angular project
