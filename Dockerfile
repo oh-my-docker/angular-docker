@@ -5,7 +5,7 @@ RUN apk update && apk upgrade && \
 
 WORKDIR /app
 
-VOLUME ['/app']
+VOLUME ["/app"]
 
 RUN npm install -g @angular/cli
 
