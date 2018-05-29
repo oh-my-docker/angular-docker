@@ -4,18 +4,22 @@
 
 Play angular just through docker and without installing any angular and node software on your computer
 
+```bash
+docker pull quay.io/oh-my-docker/angular
+```
+
 ## create angular project
 
 create a new angular project called ``demo`` and located on ``/Users/penxiao/tmp/angular-docker`` through docker volume.
 
 ```bash
-docker run --rm -it -v /Users/penxiao/tmp/angular-docker:/app xiaopeng163/angular-docker ng new demo
+docker run --rm -it -v /Users/penxiao/tmp/angular-docker:/app quay.io/oh-my-docker/angular:latest ng new demo
 ```
 
 ## only build
 
 ```bash
-docker run -it --rm -v /Users/penxiao/tmp/angular-docker/demo:/app xiaopeng163/angular-docker ng build --prod --build-optimizer
+docker run -it --rm -v /Users/penxiao/tmp/angular-docker/demo:/app quay.io/oh-my-docker/angular:latest ng build --prod --build-optimizer
 ```
 
 ## build and serve angular project
@@ -23,7 +27,7 @@ docker run -it --rm -v /Users/penxiao/tmp/angular-docker/demo:/app xiaopeng163/a
 for example, our angular project is demo in ``/Users/penxiao/tmp/angular-docker/demo``
 
 ```bash
-$ docker run -d --rm --name=angular-demo -it -v /Users/penxiao/tmp/angular-docker/demo:/app -p 4200:4200 xiaopeng163/angular-docker ng serve --host=0.0.0.0
+$ docker run -d --rm --name=angular-demo -it -v /Users/penxiao/tmp/angular-docker/demo:/app -p 4200:4200 quay.io/oh-my-docker/angular:latest ng serve --host=0.0.0.0
 b6c0b0b3a19325f7e42b5c7ec86d6ddef5b1822d70419e0361acf6f2b294c86d
 ```
 
