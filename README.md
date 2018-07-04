@@ -13,13 +13,13 @@ docker pull quay.io/oh-my-docker/angular
 create a new angular project called ``demo`` and located on ``/Users/penxiao/tmp/angular-docker`` through docker volume.
 
 ```bash
-docker run --rm -it -v /Users/penxiao/tmp/angular-docker:/omd quay.io/oh-my-docker/angular:latest ng new demo
+docker run --rm -it -v /Users/penxiao/tmp/angular-docker:/omd quay.io/oh-my-docker/angular:latest new demo
 ```
 
 ## only build
 
 ```bash
-docker run -it --rm -v /Users/penxiao/tmp/angular-docker/demo:/omd quay.io/oh-my-docker/angular:latest ng build --prod --build-optimizer
+docker run -it --rm -v /Users/penxiao/tmp/angular-docker/demo:/omd quay.io/oh-my-docker/angular:latest build --prod --build-optimizer
 ```
 
 ## build and serve angular project
@@ -27,7 +27,7 @@ docker run -it --rm -v /Users/penxiao/tmp/angular-docker/demo:/omd quay.io/oh-my
 for example, our angular project is demo in ``/Users/penxiao/tmp/angular-docker/demo``
 
 ```bash
-$ docker run -d --rm --name=angular-demo -it -v /Users/penxiao/tmp/angular-docker/demo:/omd -p 4200:4200 quay.io/oh-my-docker/angular:latest ng serve --host=0.0.0.0
+$ docker run -d --rm --name=angular-demo -it -v /Users/penxiao/tmp/angular-docker/demo:/omd -p 4200:4200 quay.io/oh-my-docker/angular:latest serve --host=0.0.0.0
 b6c0b0b3a19325f7e42b5c7ec86d6ddef5b1822d70419e0361acf6f2b294c86d
 ```
 
@@ -52,9 +52,3 @@ chunk {vendor} vendor.js, vendor.js.map (vendor) 3.37 MB [initial] [rendered]
 open browser on localhost:   http://127.0.0.1:4200/
 
 ![image](demo.png)
-
-## Welcome to subcribe MY WeChat official account
-
-欢迎大家订阅我的公众号，会不定期分享一些容器，网络，和编程相关技术文章。
-
-![QR](https://github.com/xiaopeng163/statistic/blob/master/QR/MY_WeChat_official_account.jpg)
